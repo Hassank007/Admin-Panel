@@ -3,7 +3,7 @@ import { useState } from "react";
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const Admin = () => {
+const Dashboard = () => {
  
 
   return (
@@ -50,4 +50,4 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default Dashboard;
