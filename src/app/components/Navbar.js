@@ -22,19 +22,28 @@ const Navbar = () => {
         
       </div>
       <div className='px-10 '>
+        
         <ul className="flex flex-col gap-14 text-white py-16 items-center">
+        
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`font-sans font-medium cursor-pointer text-[16px]`}
+              className={`font-sans font-medium cursor-pointer text-[16px] flex flex-row gap-10 items-center`}
               onClick={() => {
                 handleToggle();
               } }
             >
+            
               <Link href={`/${nav.id}`}>{nav.title}</Link>
+              <h1>{nav.icon}</h1>
             </li>
+            
           ))}
+           
+          
         </ul>
+       
+      
 
       </div>
 
